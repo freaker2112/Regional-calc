@@ -34,7 +34,6 @@ with tbaapiv3client.ApiClient(configuration) as api_client:
 
 
 relevant_events = [event for event in api_response if event.event_type == 0] 
-#pprint(relevant_events)
 
 
 eventkey1 = ((relevant_events[0]).key)
