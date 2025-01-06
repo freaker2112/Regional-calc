@@ -31,6 +31,7 @@ with tbaapiv3client.ApiClient(configuration) as api_client:
         #print(api_response)
     except ApiException as e:
         print("Exception when calling EventApi->get_team_events_by_year_simple: %s\n" % e)
+        quit()
 
 
 relevant_events = [event for event in api_response if event.event_type == 0] 
@@ -47,6 +48,7 @@ with tbaapiv3client.ApiClient(configuration) as api_client:
         #pprint(event_api_response1)
     except ApiException as e:
         print("Exception when calling EventApi->get_event: %s\n" % e)
+        quit()
 with tbaapiv3client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tbaapiv3client.EventApi(api_client)
@@ -55,6 +57,7 @@ with tbaapiv3client.ApiClient(configuration) as api_client:
         #pprint(event_api_response2)
     except ApiException as e:
         print("Exception when calling EventApi->get_event: %s\n" % e)
+        quit()
 
 
 
