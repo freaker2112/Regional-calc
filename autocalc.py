@@ -145,5 +145,7 @@ draft = (17-draft1) + (17-draft2)
 
 regional_points = qualpts + (17-draft) + DEpts + awardpts + agepts
 
+
+
 print("Regional Pool Points:")
-print(regional_points)
+print(round(regional_points))
